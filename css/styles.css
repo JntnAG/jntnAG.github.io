@@ -10970,3 +10970,170 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* ==========================================================================
+   AI / DEEP TECH SERIOUS MODERN DARK THEME OVERRIDES
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap');
+
+:root {
+    --tech-bg: #090d16;
+    --tech-bg-alt: #0f172a;
+    --tech-surface: #141e33;
+    --tech-surface-hover: #1b2a47;
+    --tech-border: rgba(255, 255, 255, 0.08);
+    --tech-border-glow: rgba(6, 182, 212, 0.3);
+    --tech-cyan: #06b6d4;
+    --tech-blue: #3b82f6;
+    --tech-indigo: #6366f1;
+    --tech-text-main: #f8fafc;
+    --tech-text-muted: #94a3b8;
+    --tech-text-accent: #38bdf8;
+    --bs-primary: #06b6d4;
+}
+
+body {
+    background-color: var(--tech-bg) !important;
+    color: var(--tech-text-muted) !important;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+    line-height: 1.6;
+}
+
+/* Sidebar styling */
+#sideNav {
+    background: linear-gradient(180deg, #0b1329 0%, #080c19 100%) !important;
+    border-right: 1px solid var(--tech-border) !important;
+    box-shadow: 4px 0 25px rgba(0, 0, 0, 0.5);
+}
+
+#sideNav .navbar-brand .img-profile {
+    border: 3px solid var(--tech-cyan) !important;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sideNav .navbar-brand .img-profile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    color: #cbd5e1 !important;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    padding: 0.85rem 1.5rem;
+    transition: all 0.25s ease;
+    border-left: 3px solid transparent;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+    color: var(--tech-cyan) !important;
+    background: rgba(6, 182, 212, 0.08);
+    border-left-color: var(--tech-cyan);
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+
+/* Headings & Text */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: var(--tech-text-main) !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    letter-spacing: -0.02em;
+}
+
+h1 .text-primary {
+    color: var(--tech-cyan) !important;
+    background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 0.75rem;
+    font-weight: 800;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--tech-cyan), var(--tech-blue));
+    border-radius: 2px;
+}
+
+/* Glassmorphic Cards for Resume Items */
+.resume-card, .pub-card, .cert-card {
+    background: var(--tech-surface);
+    border: 1px solid var(--tech-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.resume-card:hover, .pub-card:hover, .cert-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--tech-border-glow);
+    box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.25);
+    background: var(--tech-surface-hover);
+}
+
+/* Badges & Tech Pills */
+.tech-badge {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.82rem;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    color: var(--tech-cyan);
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.25);
+    border-radius: 20px;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+    background: rgba(6, 182, 212, 0.2);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* Social buttons */
+.social-icons .social-icon {
+    background-color: var(--tech-surface) !important;
+    border: 1px solid var(--tech-border) !important;
+    color: var(--tech-text-main) !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.social-icons .social-icon:hover {
+    background: linear-gradient(135deg, var(--tech-cyan), var(--tech-blue)) !important;
+    color: #ffffff !important;
+    transform: translateY(-3px) scale(1.05);
+    border-color: transparent !important;
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+}
+
+hr {
+    border-color: var(--tech-border) !important;
+    opacity: 0.6;
+}
+
+a {
+    color: var(--tech-text-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--tech-cyan);
+    text-decoration: underline;
+}
